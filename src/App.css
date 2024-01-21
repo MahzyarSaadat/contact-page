@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html , body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 
+====================
+navigation
+====================
+*/
+nav{
+  height: 70px;
+}
+
+nav h3{
+  margin-right: auto;
+  float: left;
+}
+
+/* 
+====================
+Header
+====================
+*/
+.contact-us-section{
+  text-align: start;
+  padding-right: 2em;
+}
+
+.buttons{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.buttons button:nth-child(3){
+  grid-column: 1 / 3;
+}
+
+.buttons img{
+  width: 20px;
+}
+
+.buttons button{
+  cursor: pointer;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background-color: #5ED8FF;
+  border: none;
+  color: #000;
+  padding: 12px 0;
+}
+
+.buttons button:nth-child(3){
+  background-color: #fff;
+  border: 1px solid #5ED8FF;
+}
+
+.form-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0 ;
+}
+
+input{
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea{
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.form-button{
+  cursor: pointer;
+  font: 18px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  padding: 6px 16px;
+  margin-left:  auto ;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bottom-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-section .hero-img{
+  max-width: 600px;
+  min-width: 300px;
+}
+
+/* Media */
+@media only screen and (max-width: 768px){
+  .bottom-section{
+    flex-direction: column;
+  }
+
+  .contact-us-section{
+    text-align: center;
+    padding-bottom: 1em;
+    padding-right: 0;
+  }
+
+  .bottom-section .hero-img{
+    max-width: 400px;
+    min-width: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 462) {
+  body{
+    background-color: rebeccapurple;
+  }
+
+  .bottom-section .hero-img{
+    max-width: 300px;
+    min-width: 160px;
+  }
+}
